@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/dialog_calendar_month_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="2016年9月"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_calendar_last_month_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@mipmap/calendar_arrow_left"
+                    android:text="上一月"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_calendar_next_month_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:drawableRight="@mipmap/calendar_arrow_right"
+                    android:text="下一月"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <com.founder.cxzx.mycalendar.calendar.WeekView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <com.founder.cxzx.mycalendar.calendar.CalendarView
+                android:id="@+id/dialog_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"></com.founder.cxzx.mycalendar.calendar.CalendarView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
