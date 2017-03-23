@@ -19,7 +19,7 @@
                 android:background="@color/colorPrimary">
 
                 <TextView
-                    android:id="@+id/dialog_calendar_month_tv"
+                    android:id="@+id/dialog_calendar_fromGv_month_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_centerInParent="true"
@@ -28,7 +28,7 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/dialog_calendar_last_month_tv"
+                    android:id="@+id/dialog_calendar_fromGv_last_month_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -39,7 +39,7 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/dialog_calendar_next_month_tv"
+                    android:id="@+id/dialog_calendar_fromGv_next_month_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -54,10 +54,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
-            <com.founder.cxzx.mycalendar.calendar.CalendarView
-                android:id="@+id/dialog_calendar"
+            <com.founder.cxzx.mycalendar.calendar.NoScrollGridView
+                android:id="@+id/dialog_calendar_fromGv_gv"
                 android:layout_width="match_parent"
-                android:layout_height="340dp"></com.founder.cxzx.mycalendar.calendar.CalendarView>
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="7"></com.founder.cxzx.mycalendar.calendar.NoScrollGridView>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
